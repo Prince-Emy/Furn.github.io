@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Kdam+Thmor&family=Roboto:ital,wght@0,700;0,900;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width:100%;
+    background: rgb(21,67,75);
+    position: fixed;
+    z-index: 2;
+}
+label.logo{
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    padding: 0 10px;
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 80px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+   color: brown;
+   text-decoration: none;
+    transition: .5s;
+}
+
+
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width :1508px) {
+    label.logo{
+        font-size: 32px;
+        padding-left: 40px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }    
+    nav a {
+        font-size: 17px;
+    }
+    @media screen and (max-width :768px){
+        label.logo{
+            font-size: 32px;
+            padding-left: 20px;
+        }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+@media screen and (max-width: 574px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 20px;
+    }
+    .footer-col{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(21,67,75);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 1s ;
+        z-index: 9;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: burlywood;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .cta h1{
+        font-size: 24px;
+    }
+    
+
+}
+    
+}
+.row{
+    margin-top: 6em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 0;
+}
+.row .col img{
+    margin-top: 1em;
+}
+.row .col .card{
+    border: 0;
+    height: 18em;
+    margin-bottom: 2em;
+    background-color: rgb(250, 250, 253);
+}
+.row .col .cardbody .card-title .card-text{
+    line-height: 100%;
+}
+.bgcard{
+    margin-top: 3em;
+    padding-top: 5vh;
+    height: 100%;
+    background-color: rgb(21,67,75);
+}
+.bghead{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.card-deck{
+    height: 50%;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left:5em;
+    margin-right:5em;
+    border: 0;
+    padding-bottom: 5em;
+}
+
+.card3 .card-group .card{
+    height: 50%;
+}
+.card3 .card-group .card img{
+    height: 50vh;
+}
+.card3 .card{
+    background-color: whitesmoke;
+}
+.card3 .card .cardbody{
+    text-align: center;
+    height: 100%;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+/*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
